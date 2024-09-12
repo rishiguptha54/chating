@@ -1,7 +1,7 @@
 // @ts-nocheck
 
-const johnSelectorBtn = document.querySelector('#rishi-selector')
-const janeSelectorBtn = document.querySelector('#aryan-selector')
+const rishiSelectorBtn = document.querySelector('#rishi-selector')
+const aryanSelectorBtn = document.querySelector('#aryan-selector')
 const chatHeader = document.querySelector('.chat-header')
 const chatMessages = document.querySelector('.chat-messages')
 const chatInputForm = document.querySelector('.chat-input-form')
@@ -32,20 +32,20 @@ const updateMessageSender = (name) => {
   chatInput.placeholder = `Type here, ${messageSender}...`
 
   if (name === 'Rishi') {
-    johnSelectorBtn.classList.add('active-person')
-    janeSelectorBtn.classList.remove('active-person')
+    rishiSelectorBtn.classList.add('active-person')
+    aryanSelectorBtn.classList.remove('active-person')
   }
   if (name === 'Aryan') {
-    janeSelectorBtn.classList.add('active-person')
-    johnSelectorBtn.classList.remove('active-person')
+    rishiSelectorBtn.classList.add('active-person')
+    aryanSelectorBtn.classList.remove('active-person')
   }
 
   /* auto-focus the input field */
   chatInput.focus()
 }
 
-johnSelectorBtn.onclick = () => updateMessageSender('Rishi')
-janeSelectorBtn.onclick = () => updateMessageSender('Aryan')
+rishiSelectorBtn.onclick = () => updateMessageSender('Rishi')
+aryanSelectorBtn.onclick = () => updateMessageSender('Aryan')
 
 const sendMessage = (e) => {
   e.preventDefault()
