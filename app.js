@@ -36,8 +36,8 @@ const updateMessageSender = (name) => {
     aryanSelectorBtn.classList.remove('active-person')
   }
   if (name === 'Aryan') {
-    rishiSelectorBtn.classList.add('active-person')
-    aryanSelectorBtn.classList.remove('active-person')
+    aryanSelectorBtn.classList.add('active-person')
+    rishiSelectorBtn.classList.remove('active-person')
   }
 
   /* auto-focus the input field */
